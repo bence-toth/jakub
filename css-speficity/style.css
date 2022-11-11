@@ -1,0 +1,48 @@
+body {
+  background-color: hsl(0deg 0% 50%);
+}
+
+main > div {
+  padding: 0.5em;
+  font-weight: bold;
+}
+
+main#main > div#myId {
+  background-color: pink;
+}
+
+main > div#myId {
+  background-color: white;
+}
+
+main > div:nth-child(6n + 1) {
+  background-color: #ff8c00;
+}
+
+main > div:nth-child(6n + 2) {
+  background-color: #ffed00;
+}
+
+main > div:nth-child(6n + 3) {
+  background-color: #008026;
+}
+
+main > div:nth-child(6n + 4) {
+  background-color: #24408e;
+}
+
+main > div:nth-child(6n + 5) {
+  background-color: #732982;
+}
+
+main > div:nth-child(6n) {
+  background-color: #e40303;
+}
+
+main > div.myClass {
+  background-color: black;
+}
+
+main > div:last-child {
+  background-color: white;
+}
