@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lato', 'san-serif';
+}
+
+button {
+  display: none;
+}
+
+
+nav {
+  min-width: 150px;
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  background-color: #b2a68d;
+}
+
+nav a {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  transition: background-color 0.3s ease-in-out;
+  border-bottom: 1px solid;
+  -webkit-tap-highlight-color: transparent;
+}
+
+nav a:hover {
+  color: #a88c7d;
+  background: #fff;
+  outline: none;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ul:first-child {
+  padding-top: 30px;
+}
+
+main {
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+@media only screen and (max-width: 920px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav {
+    height: 70px;
+  }
+
+  nav a {
+    padding-left: 12px;
+
+    border-bottom: 0;
+  }
+
+  nav a:hover {
+    border-radius: 0%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  ul:first-child {
+    padding-top: 15px;
+  }
+
+  ul:last-child {
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  button {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .display {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hide-main {
+    display: none;
+  }
+}
