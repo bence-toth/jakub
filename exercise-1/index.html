@@ -6,18 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 1</title>
     <link rel="stylesheet" href="./style.css" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
   </head>
   <body>
-    <button>Menu</button>
-    <nav>
+    <div class="container">
+  <button class="hamburger">
+    <i class="menuIcon material-icons">menu</i>
+  </button>
+</button>
+    <nav class="display">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="#"">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Our Mission</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <main>
+    <main class='hide-main'>
       <h1>This is our title</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
@@ -26,5 +36,8 @@
         itaque molestias perferendis esse tenetur!
       </p>
     </main>
+    </div>
+
+    <script src="/script.js"></script>
   </body>
 </html>
